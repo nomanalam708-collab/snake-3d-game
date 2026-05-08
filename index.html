@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>3D Snake IO</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+  <div id="menu">
+
+    <h1>3D Snake IO</h1>
+
+    <input
+      id="username"
+      type="text"
+      placeholder="Enter Username"
+    />
+
+    <button id="playBtn">
+      PLAY
+    </button>
+
+  </div>
+
+  <div id="hud">
+
+    <div id="leaderboard">
+      Leaderboard
+    </div>
+
+    <div id="stats">
+      Length: 1
+    </div>
+
+  </div>
+
+  <script src="network.js"></script>
+
+  <script src="ui.js"></script>
+
+  <script src="game.js"></script>
+
+</body>
+
+</html>
